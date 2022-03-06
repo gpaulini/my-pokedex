@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Pokédex</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <main class="pokedex">
+            <header class="pokedex-header" style="background-color:rgb(243, 205, 2)">
+                <input type="search" class="pokedex-search" id="pokedex-search" placeholder="Pokémon name or ID (#0000)">
+                <div class="pokedex-name-id-wrapper">
+                    <h2 id="pokemon-name">Pikachu</h2>
+                    <span id="pokemon-id">#0001</span>
+                </div>
+                <div class="pokedex-types">
+                    <div class="pokemon-type pokemon-type--electric">electric</div>
+                </div>
+            </header>
+            <img src="./assets/img/pikachu.png" width="240" height="240" alt="Pikachu" id="pokemon-image">
+            <section class="pokedex-body">
+                <div>
+                    <h3>Stats</h3>
+                    <ul id="pokedex-stats-list">
+                        <li><span class="pokedex-stats-item">HP</span>&nbsp;<span id="pokemon-stats-hp">100</span></li>
+                        <li><span class="pokedex-stats-item">Attack</span>&nbsp;<span id="pokemon-stats-atk">450</span></li>
+                        <li><span class="pokedex-stats-item">Defense</span>&nbsp;<span id="pokemon-stats-def">200</span></li>
+                        <li><span class="pokedex-stats-item">Agility</span>&nbsp;<span id="pokemon-stats-agility">200</span></li>
+                        <li><span class="pokedex-stats-item">Total</span>&nbsp;<span id="pokemon-stats-total">950</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Skills</h3>
+                    <ul id="pokedex-skills-list">
+                        <li>Lightning Rod</li>
+                        <li>Static</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
